@@ -8,7 +8,7 @@
       state: present
    - name: Edit the idnex.html file
      copy:
-      content: "Intelliqit Homw Page"
+      content: "Welcome to sandeep"
       dest: /var/www/html/index.html
    - name: Restart apache2
      service:
@@ -16,10 +16,10 @@
       state: restarted
    - name: Check url response for server1
      uri:
-      url: http://172.31.2.201
+      url: http://3.18.106.142
       status_code: 200
    - name: Check url response for server2
      uri:
-      url: http://172.31.9.139
+      url: http://18.188.215.35
       status_code: 200
-...      
+... 
