@@ -1,15 +1,12 @@
 ---
 - name: Create users on the managed nodes
-  hosts: appserver
+  hosts: all
   tasks:
    - name: Create user
      user:
-      name: Anu
+      name: Anoop
       password: intelliqit
-      home: /home/Anu
+      home: /home/Anoop
       uid: 1357
       shell: /bin/bash
-
-
-
 ...
